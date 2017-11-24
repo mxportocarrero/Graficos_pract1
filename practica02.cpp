@@ -147,7 +147,7 @@ void init(){
 
     //Posicion de la camara
     glm::mat4 View = glm::lookAt(
-                               glm::vec3(10,7,7),
+                               glm::vec3(10,5,7),
                                glm::vec3(0,0,0),
                                glm::vec3(0,0,1)
                                );
@@ -287,7 +287,7 @@ void display(){
 	glDrawArrays(GL_LINES, 0, 2*3);
 
     // Draw the triangle !
-    glDrawArrays(GL_TRIANGLE_STRIP, 6, 25); // 3 indices starting at 0 -> 1 triangle
+    glDrawArrays(GL_TRIANGLE_STRIP, 6, 22); // 3 indices starting at 0 -> 1 triangle
 
     glDisableVertexAttribArray(0);
 
